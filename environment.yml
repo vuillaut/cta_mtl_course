@@ -1,0 +1,19 @@
+name: glearn_course
+channels:
+  - cta-observatory
+  - conda-forge
+  - anaconda
+  - defaults
+  - pytorch
+dependencies:
+  - ipython
+  - ctapipe==0.8.0
+  - pytables
+  - numpy
+  - notebook
+  - scikit-learn
+  - pytorch==1.7
+  - torchvision
+  - pip
+  - pip:
+    - https://zenodo.org/record/4419866/files/IndexedConv/IndexedConv-v1.3.zip
