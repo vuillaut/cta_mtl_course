@@ -8,7 +8,7 @@ You may run it online using MyBinder:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/vuillaut/cta_mtl_course.git/HEAD)
 
-on Google Colab
+or on Google Colab
 
 [![Open random forests In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vuillaut/cta_mtl_course/blob/main/random_forests.ipynb)
 
