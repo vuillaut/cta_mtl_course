@@ -26,11 +26,12 @@ jobs:
           auto-activate-base: false
       - shell: bash -l {0}
         run: |
+          conda activate glearn_course
           conda info
           conda list
       - name: run jupyter notebooks
         shell: bash
         run: |
-            conda install jupyter notebook
+            conda install jupyter notebook nbconvert
             jupyter nbconvert --to notebook --execute *.ipynb
 
