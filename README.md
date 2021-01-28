@@ -1,6 +1,8 @@
 # Multitask Learning course
 
-Short course example of machine learning application to the [Cherenkov Telescope Array](https://www.cta-observatory.org/) event reconstruction.
+Short course on multitask learning application to the [Cherenkov Telescope Array](https://www.cta-observatory.org/) event reconstruction.     
+It's composed of slides and short demos (notebooks).
+
 
 Authors:
 - Thomas Vuillaume
