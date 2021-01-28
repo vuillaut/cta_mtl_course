@@ -26,6 +26,7 @@ jobs:
           auto-activate-base: false
       - shell: bash
         run: |
+          conda activate glearn_courses
           conda info
           conda list
       - name: run jupyter notebooks
