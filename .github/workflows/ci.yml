@@ -29,9 +29,8 @@ jobs:
           conda activate glearn_course
           conda info
           conda list
-      - name: run jupyter notebooks
-        shell: bash
+      - name: Run pytest
+        shell: bash -l {0}
         run: |
-            conda install jupyter notebook nbconvert
-            jupyter nbconvert --to notebook --execute *.ipynb
-
+            conda install pytest
+            pytest
