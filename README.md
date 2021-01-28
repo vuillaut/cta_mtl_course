@@ -3,6 +3,8 @@
 Short course on multitask learning application to the [Cherenkov Telescope Array](https://www.cta-observatory.org/) event reconstruction.     
 It's composed of slides and short demos (notebooks).
 
+It is based on the [GammaLearn](https://gitlab.lapp.in2p3.fr/GammaLearn) project, developing deep learning solutions for CTA data analysis.
+
 
 Authors:
 - Thomas Vuillaume
