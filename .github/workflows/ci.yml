@@ -10,22 +10,26 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  miniconda:
+    name: Miniconda ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+        matrix:
+            os: ["ubuntu-latest", "windows-latest"]
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      run: |
-        # $CONDA is an environment variable pointing to the root of the miniconda directory
-        $CONDA/bin/conda env update --file environment.yml --name base
-        $CONDA/bin/conda init bash
-        $CONDA/bin/conda activate base
-    - name: run jupyter notebooks
-      run: |
-        jupyter nbconvert --to notebook --execute *.ipynb
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: glearn_courses
+          environment-file: environment.yml
+          python-version: 3.8
+          auto-activate-base: false
+      - shell: bash
+        run: |
+          conda info
+          conda list
+      - name: run jupyter notebooks
+        shell: bash
+        run: |
+            jupyter nbconvert --to notebook --execute *.ipynb
+
