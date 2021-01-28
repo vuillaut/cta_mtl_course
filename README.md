@@ -5,11 +5,14 @@ It's composed of slides and short demos (notebooks).
 
 It is based on the [GammaLearn](https://gitlab.lapp.in2p3.fr/GammaLearn) project, developing deep learning solutions for CTA data analysis.
 
-
 Authors:
 - Thomas Vuillaume
 - [Mikael Jacquemont](https://github.com/mikael10j)
 
+![tests](https://github.com/vuillaut/cta_mtl_course/workflows/cta_mtl_course_test/badge.svg)
+
+
+## Run the demos
 
 You may run it online using MyBinder:
 
@@ -27,7 +30,7 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 2. run
 ```
 conda env create -f environment.yml
-conda activate glearn_course
+conda activate cta_mtl
 ```
 
 And run the notebooks :)

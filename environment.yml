@@ -1,4 +1,4 @@
-name: glearn_course
+name: cta_mtl
 channels:
   - cta-observatory
   - conda-forge
