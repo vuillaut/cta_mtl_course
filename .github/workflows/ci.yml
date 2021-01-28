@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: glearn_courses
+          activate-environment: glearn_course
           environment-file: environment.yml
           python-version: 3.8
           auto-activate-base: false
@@ -31,6 +31,6 @@ jobs:
       - name: run jupyter notebooks
         shell: bash
         run: |
-            conda install jupyter
+            conda install jupyter notebook
             jupyter nbconvert --to notebook --execute *.ipynb
 
